@@ -1,0 +1,121 @@
+baseURL: "https://alieren.dev/"
+title: Ali Eren Öztürk
+paginate: 8
+theme: PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+
+minify:
+    disableXML: true
+    # minifyOutput: true
+
+languages:
+    en:
+        languageName: "English"
+        weight: 1
+        menu:
+            main:
+                - name: Blog
+                  url: posts/
+                  weight: 1
+                - name: Categories
+                  url: categories/
+                  weight: 2
+                - name: Search
+                  url: search/
+                  weight: 3
+                - name: Github
+                  url: https://github.com/aliereno
+                - name: LinkedIn
+                  url: https://www.linkedin.com/in/alierenozturk/
+
+    tr:
+        languageName: ":tr:"
+        languageAltTitle: Türkçe
+        weight: 2
+        title: Ali Eren Öztürk
+        menu:
+            main:
+                - name: Blog
+                  url: posts/
+                  weight: 1
+                - name: Kategoriler
+                  url: categories/
+                  weight: 2
+                - name: Arama
+                  url: search/
+                  weight: 3
+                - name: Github
+                  url: https://github.com/aliereno
+                - name: LinkedIn
+                  url: https://www.linkedin.com/in/alierenozturk/
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
+
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
+    author: Ali Eren Öztürk
+
+    defaultTheme: auto
+    # disableThemeToggle: true
+    ShowShareButtons: false
+    ShowReadingTime: true
+    # disableSpecial1stPost: true
+    displayFullLangName: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    ShowRssButtonInSectionTermList: true
+    ShowToc: true
+    # comments: false
+    # images: ["papermod-cover.png"]
+
+    profileMode:
+        enabled: true
+        title: Ali Eren Öztürk
+        imageUrl: "https://avatars.githubusercontent.com/u/36535188?v=4"
+        imageTitle: Ali Eren Öztürk's Avatar
+        # imageWidth: 120
+        # imageHeight: 120
+        subtitle: "🎓 Computer Engineer | Software Developer | Python | Go | Rust"
+        buttons:
+            - name: Blog
+              url: posts
+            - name: Contact
+              url: mailto:oztalieren@gmail.com
+    socialIcons:
+        - name: github
+          url: "https://github.com/aliereno"
+        - name: LinkedIn
+          url: "https://www.linkedin.com/in/alierenozturk/"
+        - name: Rss
+          url: "index.xml"
+
+    editPost:
+        URL: "https://github.com/aliereno/site/tree/content"
+        Text: "Suggest Changes" # edit text
+        appendFilePath: true # to append file path to Edit link
+    assets:
+        disableHLJS: true
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+    highlight:
+        noClasses: false
+        # anchorLineNos: true
+        # codeFences: true
+        # guessSyntax: true
+        # lineNos: true
+        # style: monokai
