@@ -63,7 +63,7 @@ outputs:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
+    description: "Ali Eren Öztürk - https://alieren.dev"
     author: Ali Eren Öztürk
 
     defaultTheme: auto
