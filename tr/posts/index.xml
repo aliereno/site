@@ -1,19 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Posts on Ali Eren Öztürk</title>
-    <link>https://alieren.dev/tr/posts/</link>
-    <description>Recent content in Posts on Ali Eren Öztürk</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 01 Feb 2023 23:41:18 +0300</lastBuildDate><atom:link href="https://alieren.dev/tr/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Merhaba Dünya</title>
-      <link>https://alieren.dev/tr/posts/hello-world/</link>
-      <pubDate>Wed, 01 Feb 2023 23:41:18 +0300</pubDate>
-      
-      <guid>https://alieren.dev/tr/posts/hello-world/</guid>
-      <description></description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on Ali Eren Öztürk</title><link>https://alieren.dev/tr/posts/</link><description>Recent content in Posts on Ali Eren Öztürk</description><generator>Hugo -- gohugo.io</generator><language>tr</language><lastBuildDate>Sun, 30 Jul 2023 19:34:18 +0300</lastBuildDate><atom:link href="https://alieren.dev/tr/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>FastAPI Uygulamasına Çoklu Dil Desteği Ekleme</title><link>https://alieren.dev/tr/posts/fastapi-setting-gettext-translations-tr/</link><pubDate>Sun, 30 Jul 2023 19:34:18 +0300</pubDate><guid>https://alieren.dev/tr/posts/fastapi-setting-gettext-translations-tr/</guid><description>Merhaba!
+Bu blog yazısında, FastAPI uygulamanızda dil çevirilerini Gettext kullanarak nasıl yapılandıracağınızı öğreneceksiniz. Gettext, dil desteği eklemek için oldukça etkili bir araçtır ve modern web uygulamaları için harika bir seçenektir.
+Aşağıdaki gibi bir uygulamamız olduğunu varsayalım ve buna çeviri desteği eklemeyi adım adım oluşturalım.
+# main.py from fastapi import FastAPI app = FastAPI() @app.get(&amp;quot;/&amp;quot;) async def read_root(): message = &amp;quot;Merhaba, Dünya!&amp;quot; return {&amp;quot;message&amp;quot;: message} Adım 1: Paket kurulumu İlk adım olarak, Gettext&amp;rsquo;i FastAPI uygulamanıza eklemek için babel kütüphanesini yüklemeniz gerekecek.</description></item><item><title>Merhaba Dünya</title><link>https://alieren.dev/tr/posts/hello-world/</link><pubDate>Wed, 01 Feb 2023 23:41:18 +0300</pubDate><guid>https://alieren.dev/tr/posts/hello-world/</guid><description/></item></channel></rss>
