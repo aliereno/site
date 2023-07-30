@@ -11,10 +11,6 @@ buildExpired: false
 enableEmoji: true
 pygmentsUseClasses: true
 
-minify:
-    disableXML: true
-    # minifyOutput: true
-
 languages:
     en:
         languageName: "English"
@@ -37,9 +33,7 @@ languages:
 
     tr:
         languageName: ":tr:"
-        languageAltTitle: Türkçe
         weight: 2
-        title: Ali Eren Öztürk
         menu:
             main:
                 - name: Blog
@@ -72,10 +66,10 @@ params:
     ShowReadingTime: true
     # disableSpecial1stPost: true
     displayFullLangName: true
-    ShowPostNavLinks: true
-    ShowBreadCrumbs: true
+    ShowPostNavLinks: false
+    ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
-    ShowRssButtonInSectionTermList: true
+    ShowRssButtonInSectionTermList: false
     ShowToc: true
     # comments: false
     # images: ["papermod-cover.png"]
@@ -105,17 +99,14 @@ params:
         URL: "https://github.com/aliereno/site/blob/main/content"
         Text: "Suggest Changes" # edit text
         appendFilePath: true # to append file path to Edit link
-    assets:
-        disableHLJS: true
 
 markup:
     goldmark:
         renderer:
             unsafe: true
     highlight:
-        noClasses: false
-        # anchorLineNos: true
-        # codeFences: true
-        # guessSyntax: true
-        # lineNos: true
-        # style: monokai
+        noClasses: true
+        anchorLineNos: false
+        codeFences: false
+        lineNos: true
+        style: monokai
