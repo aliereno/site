@@ -92,6 +92,7 @@ pybabel compile -d languages
 
 from fastapi import FastAPI
 from gettext import translation
+from gettext import gettext as _
 
 app = FastAPI()
 
@@ -133,13 +134,16 @@ def get_language(request: Request):
 async def add_gettext_middleware(request: Request, call_next):
     language = get_language(request)
     trans = translation('messages', 'languages', languages=[language])
-    trans.install()
+
+    request.state.gettext = trans.gettext
     response = await call_next(request)
     return response
 
 
 @app.get("/")
-async def read_root():
+async def read_root(request: Request):
+    _ = request.state.gettext
+
     message = _("Merhaba, Dünya!")
     return {"message": message}
 ```
